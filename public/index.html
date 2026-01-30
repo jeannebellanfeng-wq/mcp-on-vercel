@@ -1,32 +1,119 @@
-<!doctype html>
-<html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing MCP</title>
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    .wrap{max-width:900px;margin:0 auto;padding:32px}
-    .card{border:1px solid #eee;border-radius:16px;padding:16px;background:#fafafa}
-    .btn{display:inline-block;padding:12px 16px;border-radius:12px;background:#111;color:#fff;text-decoration:none;font-weight:600}
-    code{background:#f3f3f3;padding:2px 6px;border-radius:6px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componize - Manufacturing Documentation Challenges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .phthalo-blue { color: #0c0c82; }
+        .bg-phthalo-blue { background-color: #0c0c82; }
+        .bg-brand-orange { background-color: #ffb045; }
+        .brand-tomato { color: #ff4b33; }
+        .bg-lavender { background-color: #ececfd; }
+        .separator { height: 4px; width: 80px; border-radius: 2px; }
+        .cta-primary { transition: all 0.3s ease; }
+        .cta-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); }
+        .cta-secondary { transition: all 0.3s ease; }
+        .cta-secondary:hover { background-color: #f3f4f6; }
+    </style>
 </head>
-<body>
-  <div class="wrap">
-    <h1>Landing page (hébergée sur Vercel)</h1>
-    <p>
-      Ce projet contient <strong>un serveur MCP</strong> accessible via <code>/mcp</code>.
-      Cette page <code>/</code> est la landing du projet.
-    </p>
+<body class="bg-white">
+<div id="wordpress-content">
+    <!-- Hero Section (two columns) -->
+    <section class="bg-white">
+        <div class="container mx-auto px-6 py-16 md:py-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 phthalo-blue">
+                        Solving Manufacturing Documentation Challenges
+                    </h1>
+                    <p class="text-lg md:text-xl max-w-3xl mx-auto lg:mx-0 mb-8 text-gray-600">
+                        Enable digital continuity for your product information. Centralize, structure, and automate your documentation to increase efficiency, ensure compliance, and accelerate your time-to-market.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="https://componize.com/try-now/" class="cta-primary bg-brand-orange text-white font-bold py-3 px-8 rounded-lg text-lg">Facing complex content challenges? Let’s talk</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://staging17.componize.com/wp-content/uploads/2025/07/Solving-Manufacturing-Documentation-Challenges-Componize-White-Paper-v2.pdf" class="cta-secondary bg-gray-100 text-gray-800 font-bold py-3 px-8 rounded-lg text-lg">Download the white paper</a>
+                    </div>
+                </div>
+                <div class="mt-8 lg:mt-0">
+                    <img src="https://via.placeholder.com/720x520.png?text=Solving+Manufacturing+Documentation+Challenges" alt="Illustration: Solving Manufacturing Documentation Challenges" class="rounded-xl shadow-lg w-full h-auto"/>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h2>Liens</h2>
-      <p><a class="btn" href="/mcp">Ouvrir l’endpoint MCP</a></p>
-      <p style="margin-top:10px;color:#444;">
-        Si tu vois une réponse (même JSON/texte), ton MCP tourne ✅
-      </p>
+    <!-- Trusted Logos: single row -->
+<section class="bg-white py-8">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-wrap md:flex-nowrap justify-center items-center gap-8 md:gap-12">
+      <img src="https://storage.googleapis.com/gcs-public-06d5069a-68a8-444f-864a-2a1c0d4a9ef1/Airbus.png" alt="Airbus Logo" class="h-10 md:h-12 w-auto object-contain"/>
+      <img src="https://storage.googleapis.com/gcs-public-06d5069a-68a8-444f-864a-2a1c0d4a9ef1/Abbott.png" alt="Abbott Logo" class="h-10 md:h-12 w-auto object-contain"/>
+      <img src="https://storage.googleapis.com/gcs-public-06d5069a-68a8-444f-864a-2a1c0d4a9ef1/Toyota.png" alt="Toyota Logo" class="h-10 md:h-12 w-auto object-contain"/>
+      <img src="https://storage.googleapis.com/gcs-public-06d5069a-68a8-444f-864a-2a1c0d4a9ef1/Teradyne.png" alt="Teradyne Logo" class="h-10 md:h-12 w-auto object-contain"/>
+      <img src="https://storage.googleapis.com/gcs-public-06d5069a-68a8-444f-864a-2a1c0d4a9ef1/Nexperia.png" alt="Nexperia Logo" class="h-10 md:h-12 w-auto object-contain"/>
     </div>
   </div>
+</section>
+
+<!-- Introduction to Challenges Section -->
+<section class="py-16 md:py-24 bg-lavender">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold phthalo-blue mb-4">Your documentation is complex. Managing it shouldn't be.</h2>
+    <div class="separator bg-brand-tomato mx-auto mb-6"></div>
+    <p class="max-w-4xl mx-auto text-gray-600 text-lg">In manufacturing, documentation accuracy and consistency are critical. However, information silos, diverse formats, and product lifecycles spanning decades make maintenance costly and risky. Discover how a CCMS can turn these obstacles into competitive advantages.</p>
+  </div>
+</section>
+
+<!-- Key Challenges & Solutions Section -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-lavender p-8 rounded-xl"><h3 class="text-xl font-bold phthalo-blue mb-3">Break Down Content Silos</h3><p class="text-gray-600">Integrate your existing systems (PLM, ERP, etc.) to automatically inject up-to-date data into your documentation. Eliminate manual copy-pasting, reduce errors, and ensure information consistency.</p></div>
+      <div class="bg-lavender p-8 rounded-xl"><h3 class="text-xl font-bold phthalo-blue mb-3">Manage Diverse Formats</h3><p class="text-gray-600">Centralize all your content—structured (DITA, XML) and unstructured (PDF, Office, CAD, Videos)—in a single repository. Simplify search, updates, and distribution for all your documents.</p></div>
+      <div class="bg-lavender p-8 rounded-xl"><h3 class="text-xl font-bold phthalo-blue mb-3">Ensure Long-Term Documentation Viability</h3><p class="text-gray-600">Base your content on the DITA (XML) open standard to guarantee its accessibility and maintainability for decades, regardless of software changes. Protect your information assets.</p></div>
+      <div class="bg-lavender p-8 rounded-xl"><h3 class="text-xl font-bold phthalo-blue mb-3">Guarantee Regulatory Compliance</h3><p class="text-gray-600">Get full traceability with detailed version histories and audit trails for every action. Automate compliance reports and confidently adapt to new standards.</p></div>
+      <div class="bg-lavender p-8 rounded-xl"><h3 class="text-xl font-bold phthalo-blue mb-3">Streamline Team Collaboration</h3><p class="text-gray-600">Enable your writers, SMEs, and engineers to collaborate in real-time on a unified platform. Review and approve content with efficient, integrated workflows.</p></div>
+      <div class="bg-lavender p-8 rounded-xl"><h3 class="text-xl font-bold phthalo-blue mb-3">Automate for Higher Productivity</h3><p class="text-gray-600">Save up to 80% of time on repetitive tasks. Automate file conversions, image resizing, multichannel publishing, and translation management to focus on high-value work.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Proof Section -->
+<section class="py-16 md:py-24 bg-phthalo-blue text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4">Trusted by Industry Leaders</h2>
+    <div class="separator bg-brand-orange mx-auto mb-8"></div>
+    <p class="max-w-3xl mx-auto text-gray-200 text-lg mb-12">Companies like <b>Toyota</b>, <b>Airbus</b>, and global leaders <b>in medical devices</b> trust us to manage their most critical documentation.</p>
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+      <div class="bg-white rounded-lg p-6 text-center text-gray-800 shadow-lg max-w-sm">
+        <p class="font-bold text-xl phthalo-blue mb-2">Toyota Motor Europe</p>
+        <p class="text-gray-600">Reduced service bulletin preparation time by <span class="font-bold brand-tomato">50%</span> and saves approximately <span class="font-bold brand-tomato">€650,000</span> annually on translation costs.</p>
+      </div>
+      <div class="bg-white rounded-lg p-6 text-center text-gray-800 shadow-lg max-w-sm">
+        <p class="font-bold text-xl phthalo-blue mb-2">Leading Medical Device Manufacturer</p>
+        <p class="text-gray-600">Halved translation costs and reduced delays by over <span class="font-bold brand-tomato">60%</span> through content reuse and automation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA Section -->
+<section id="contact" class="py-16 md:py-24 bg-lavender">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold phthalo-blue mb-4">Ready to Transform Your Documentation?</h2>
+    <p class="max-w-3xl mx-auto text-gray-600 text-lg mb-8">Let's discuss your specific challenges and discover how Componize CCMS can help you achieve your goals.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://componize.com/try-now/" class="cta-primary bg-brand-orange text-white font-bold py-3 px-8 rounded-lg text-lg">Facing complex content challenges? Let’s talk</a>
+      <a target="_blank" rel="noopener noreferrer" href="https://staging17.componize.com/wp-content/uploads/2025/07/Solving-Manufacturing-Documentation-Challenges-Componize-White-Paper-v2.pdf" class="cta-secondary bg-white text-gray-800 font-bold py-3 px-8 rounded-lg text-lg hover:bg-gray-100">Download the white paper</a>
+    </div>
+  </div>
+</section>
+
+</div>
 </body>
 </html>
