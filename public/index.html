@@ -1,10 +1,32 @@
-<h1>MCP on Vercel</h1>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing MCP</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .wrap{max-width:900px;margin:0 auto;padding:32px}
+    .card{border:1px solid #eee;border-radius:16px;padding:16px;background:#fafafa}
+    .btn{display:inline-block;padding:12px 16px;border-radius:12px;background:#111;color:#fff;text-decoration:none;font-weight:600}
+    code{background:#f3f3f3;padding:2px 6px;border-radius:6px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Landing page (hébergée sur Vercel)</h1>
+    <p>
+      Ce projet contient <strong>un serveur MCP</strong> accessible via <code>/mcp</code>.
+      Cette page <code>/</code> est la landing du projet.
+    </p>
 
-<p>Protocol is mounted below /.</p>
-
-<p>
-  <a
-    href="https://vercel.com/templates/other/model-context-protocol-mcp-with-vercel-functions"
-    >Clone template on Vercel</a
-  >
-</p>
+    <div class="card">
+      <h2>Liens</h2>
+      <p><a class="btn" href="/mcp">Ouvrir l’endpoint MCP</a></p>
+      <p style="margin-top:10px;color:#444;">
+        Si tu vois une réponse (même JSON/texte), ton MCP tourne ✅
+      </p>
+    </div>
+  </div>
+</body>
+</html>
